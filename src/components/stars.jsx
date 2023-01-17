@@ -24,7 +24,7 @@ export default function Stars({score, changeRating, id}) {
     //animate stars
     useEffect(() => {
         //dont run animation on first renders
-        if (firstUpdate.current<=2) {
+        if (firstUpdate.current<2) {
             firstUpdate.current++;
             
           }else{
