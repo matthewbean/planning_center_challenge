@@ -1,0 +1,146 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  place-items: center;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, -serif;
+}
+.card{
+  transform: scale(50%);
+  background-color: #fff;
+  width: min(640px, 100vw);
+  border-radius: 30px;
+  box-shadow: 0px 2px 5px #bbb;
+}
+.title{
+  font-size: 40px; 
+  font-weight: 700;
+  padding: 40px;
+  border-bottom: 1px solid #EEEEEE;
+
+}
+.new-rating{
+  padding: 16px 40px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.new-rating .row{
+  display:flex;
+  margin-bottom: 24px;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+.new-rating label, .label{
+  font-weight: 600;
+  font-size: 24px;
+}
+.new-rating input, .new-rating select{
+height: 100%;
+max-width: 437px;
+flex: 0 1 437px;
+font-size: 24px;
+border-radius: 10px;
+padding-inline: 24px;
+border: 1px solid #ccc;
+}
+.black{
+  color: #000;
+}
+select {
+  color: #aaa;
+}
+select {
+	width:100px;
+	float:left;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	border:2px solid #000;
+	background:url('./assets/caret.svg');
+	background-repeat:no-repeat;
+	background-size:16px 16px;
+	background-position:right 28px top 28px;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+.new-rating input::placeholder{
+  color:#aaa
+}
+
+.star{
+  margin-right: 4px;
+}
+.star:last-child{
+  margin-right: 0;
+}
+.submit{
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 24px;
+  border: #61A0FF solid 1px;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  background: hsla(216, 100%, 79%, 1);
+  background: linear-gradient(180deg, hsla(216, 100%, 79%, 1) 0%, hsla(216, 100%, 69%, 1) 100%);
+  box-shadow: 0px 4px 8px 0px rgba(97,160,255,0.25), 0px 2px 4px 0px rgba(97,160,255,0.5);;
+}
+
+.movie{
+  list-style: none;
+  font-size: 24px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+.movie-title{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  flex: 0 0 255px;
+  max-width: 255px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.category{
+  color: #AAAAAA
+}
+.movie .small{
+  font-size: 16px;
+}
+.thumb{
+  background: #61A0FF;
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+  margin-right: 24px;
+}
+.movie .stars-container{
+  margin-left: auto;
+}
+.invisible{
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0; 
+}
+button{
+  cursor: pointer;
+}
