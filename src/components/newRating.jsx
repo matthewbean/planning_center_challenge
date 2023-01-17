@@ -20,7 +20,7 @@ export default function NewRating(props) {
     }
 const handleSubmit=(e)=>{
     e.preventDefault()
-    if (state.name.length<=0){
+    if (state.name.length<=0 || !/[A-Za-z0-9]+/.test(state.name)){
         alert("Please enter a valid title")
         return
     }

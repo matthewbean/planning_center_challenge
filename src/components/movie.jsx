@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Stars from "./stars";
+import { motion } from "framer-motion"
+
 export default function Movie({category, name, score, changeRating, id}) {
     const [small, setsmall] = useState(false)
     const [thumbText, setThumbText] = useState("AB")
@@ -22,9 +24,9 @@ export default function Movie({category, name, score, changeRating, id}) {
             setsmall(true)
         }
     }, [thumbText])
-    // console.log(small)
     return (
-        <li className = "movie">
+        <li
+         className = "movie">
             <div className={"thumb" + (small? " small":"")}>
                 {thumbText}
             </div>
