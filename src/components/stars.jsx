@@ -41,7 +41,7 @@ export default function Stars({score, changeRating, id}) {
 
     return (
         <>
-            <div className="stars-container" aria-label={"rate movie, current rating"+score}>
+            <div className="stars-container" aria-label={"rate movie, current rating "+score}>
                 {stars&&stars.map((item, i)=>(
                     <button aria-label={i+1 +" of 5 stars"} key={i} onClick={(e)=>changeRating(e, i+1, id)} className='invisible'>
                     {item?(
